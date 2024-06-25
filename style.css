@@ -51,6 +51,9 @@
     font: inherit;
     cursor: pointer;
   }
+  section {
+	padding: 50px 20px;;
+  }
   @media (prefers-reduced-motion: reduce) {
     * {
       animation-duration: 0.01ms !important;
@@ -147,6 +150,11 @@
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+  }
+
+  li{
+	list-style-type: none;
+  
   }
 
 .list {
@@ -253,6 +261,241 @@
 	text-align: center;
   }
 
+  .pricing,.faq {
+	background-color: black;
+	color: white;
+}
+
+  .pricing h2 {
+	padding-block-start: 2rem;
+	text-align: center;
+  }
+
+.pricing > p {
+	padding: 0 3rem;
+	text-align: center;
+	max-inline-size: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pricing > ul {
+	color: #161c2d;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 5rem;
+	list-style: none;
+	text-align: center;
+	gap: 2rem; 
+}
+
+.pricing li {
+	background-color: white !important;
+	border-radius: 10px;
+	padding: 20px;
+	max-width: 330px;
+	text-align: center;
+	flex: 1 1 calc(33.333% - 40px);
+	margin: 10px;
+}	
+
+.pricing li h3 {
+	margin-inline: 75px;
+	font-size: .8rem;
+	background-color: rgb(71, 59, 240,0.08);
+	color: blue;
+	border-radius: 10px;
+
+}
+
+.pricing data {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+
+.faq p, .pricing p {
+	font-size: 0.9em;
+	color: grey;
+	padding-block-start: .8rem;
+	padding-block-end: 4rem;
+
+  }
+}
+.faq h2 {
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.faq li > a {
+	display: none;
+}
+
+.faq-contact {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 5rem;
+}
+
+.contact-link{
+	display: block;
+	text-decoration: none;
+	color: greenyellow;
+}
+
+.faq > ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding-bottom: 20px;
+	gap: 20px;
+	list-style: none;
+	margin-block-end: 2rem;
+}
+
+.faq > h3 {
+	text-align: center;
+	max-inline-size: 600px;
+	margin-block: 30px;
+}
+
+
+.faq li {
+  padding: 20px;
+  max-inline-size: 650px;
+}
+
+.landing-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+	margin-block-start: 2rem;
+    padding-block: 100px;
+    background-color: #fff;
+    color: #343a40;
+}
+
+.landing-content {
+    max-width: 50%;
+}
+
+.landing-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    color: #343a40;
+}
+
+.landing-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0;
+	max-inline-size: 500px;
+}
+
+.landing-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more {
+    background-color: rgb(71, 59, 240,0.08);
+    color: #473BF0;
+}
+
+.learn-more:hover {
+	transform: scale(1.1)ease-in-out;
+    background-color: rgb(71, 59, 240,0.4);
+}
+
+.get-it-now {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+.get-it-now:hover {
+    background-color: #5a54cc;
+}
+
+
+footer {
+    background-color: #f8f8f8;
+    color: #333;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	padding-block: 100px;
+}
+
+.footer-brand {
+    margin-bottom: 40px;
+    text-align: left;
+    max-inline-size: 300px;
+}
+
+.footer-brand .brand-name {
+    font-size: 2rem;
+    font-weight: 1000;
+	text-decoration: none;
+    color: #000;
+    margin-block: 1rem;
+    display: block;
+}
+
+.footer-brand .brand-description {
+    font-size: 1em;
+    color: #555;
+}
+
+.footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    margin: 20px 30px;
+}
+
+
+
+.section-title {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.section-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-links li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.section-links li:hover {
+    color: #444;
+}
+
 
 
   @media screen and (min-width: 720px) {
@@ -279,7 +522,6 @@
       display: inline;
     }
   }
-}
 
 @layer components {
   .burger {
