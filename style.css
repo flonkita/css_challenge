@@ -187,6 +187,36 @@
     margin-bottom: 2rem;
   }
 
+  .number-section{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: rgb(235, 235, 235);
+  }
+  .number-section > ul {
+    display: flex;
+    padding: 2rem;
+    text-align: left;
+    list-style: none;
+  }
+
+  .number-section strong {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-inline-end: 20px;
+  }
+
+  .number-section li {
+	margin-inline: 0 2rem;
+    display: flex;
+    align-items: center;
+    max-inline-size: 250px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+	box-sizing: border-box;
+  }
+
   @media screen and (min-width: 720px) {
     .site-header {
       background-color: #ffffffa1;
