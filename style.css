@@ -196,7 +196,7 @@
   }
   .number-section > ul {
     display: flex;
-    padding: 2rem;
+    padding: 5rem;
     text-align: left;
     list-style: none;
   }
@@ -216,6 +216,44 @@
     justify-content: space-around;
 	box-sizing: border-box;
   }
+
+.testimonial {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+	margin-block-start: 2rem;
+}
+
+.testimonial svg {
+	display: block;
+	height: 72px;
+	width: 72px;
+	margin-inline: auto;
+	margin-block: 4rem;
+}
+
+  .testimonial strong {
+	font-size: 1.5rem;
+	align-self: center;
+  }
+
+  .testimonial p {
+	margin: 0.8rem 0;
+	padding: 0;
+	max-inline-size: 350px;
+  }
+  .testimonial cite > strong {
+	font-size: 1rem;
+  }
+
+  .testimonial cite > strong > p {
+	font-size: .8rem;
+	text-align: center;
+  }
+
+
 
   @media screen and (min-width: 720px) {
     .site-header {
